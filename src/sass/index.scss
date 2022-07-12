@@ -1,0 +1,16 @@
+$color-black: black;
+$color-primary: red;
+$color-secondary: blue;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin normalize-link() {
+    color: $color-black;
+    text-decoration: none
+}
+
+.nav__link {
+    @include normalize-link();
+}
