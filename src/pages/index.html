@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Budgets</title>
-    <link rel="stylesheet" href="../styles/index.css">
-</head>
-<body>
-    
-    <h1>Budgets with typescript</h1>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="nav__item"><a href="#" class="nav__link">link</a></div>
-            <div class="nav__item"><a href="#" class="nav__link">link</a></div>
-            <div class="nav__item"><a href="#" class="nav__link">link</a></div>
-        </nav>
-    </header>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <!-- <h1 class="title">Budgets with typescript</h1> -->
 
-</body>
+    <main class="budget-create">
+      <h1 class="budget-create__title">Create budget</h1>
+      <div class="mount">
+        <div class="mount__item mount--total" id="total">180</div>
+        <div class="mount__item mount--type" id="type">$USD</div>
+      </div>
+      <form action="" class="form">
+        <input
+          type="text"
+          placeholder="description"
+          id="description"
+          name="description"
+          class="form__input"
+        />
+        <input
+          class="form__input"
+          type="number"
+          placeholder="price"
+          id="price"
+          name="price"
+        />
+        <input class="form__input form--button" type="submit" value="create" />
+      </form>
+    </main>
+  </body>
 </html>
